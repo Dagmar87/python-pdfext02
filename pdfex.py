@@ -8,8 +8,6 @@ with pdfplumber.open(arquivo) as pdf:
     
     print("Numero de paginas: ", len(pdf.pages), "\n")
     
-    #print(len((pdf.pages)))
-    
     for pagina in pdf.pages:
         
         resultado = pagina.extract_text()
